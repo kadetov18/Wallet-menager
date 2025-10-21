@@ -1,13 +1,13 @@
 import { Text, TouchableOpacity, View } from "react-native";
 import { styles } from "./styles";
 
-export function Header() {
+type resProps = {
+  res: () => void;
+};
+export function Header({ res }: resProps) {
   return (
     <View style={styles.header}>
-      <TouchableOpacity
-        style={styles.logoButton}
-        onPress={() => console.log("Logo pressed")}
-      >
+      <TouchableOpacity style={styles.logoButton} onPress={res}>
         <Text style={styles.logo}>LOGO</Text>
       </TouchableOpacity>
       <Text style={styles.page}>Wallet</Text>

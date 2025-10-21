@@ -5,10 +5,23 @@ export const styles = StyleSheet.create({
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
+    marginBottom: 20,
   },
   actionText: {
-    fontSize: 18,
+    fontSize: 20,
     fontWeight: "bold",
   },
-  actionButton: {},
+  actionButton: {
+    width: 80,
+    height: 40,
+    backgroundColor: "#ddd",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 8,
+  },
+  actionButtonText: {
+    fontSize: 18,
+    fontWeight: "bold",
+    textAlign: "center",
+  },
 });

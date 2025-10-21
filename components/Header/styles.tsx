@@ -2,7 +2,8 @@ import { StyleSheet } from "react-native";
 
 export const styles = StyleSheet.create({
   header: {
-    marginVertical: 50,
+    marginTop: 50,
+
     flexDirection: "row",
     justifyContent: "space-between",
     alignItems: "center",
@@ -23,20 +24,20 @@ export const styles = StyleSheet.create({
     textAlign: "center",
   },
   logoButton: {
-    width: 80, // ширина кнопки
-    height: 40, // висота кнопки
+    width: 80,
+    height: 40,
     backgroundColor: "#ddd",
-    justifyContent: "center", // вирівнює по вертикалі
-    alignItems: "center", // вирівнює по горизонталі
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 8,
   },
 
   burgerButtonMenu: {
-    width: 80, // ширина кнопки
-    height: 40, // висота кнопки
+    width: 80,
+    height: 40,
     backgroundColor: "#ddd",
-    justifyContent: "center", // вирівнює по вертикалі
-    alignItems: "center", // вирівнює по горизонталі
+    justifyContent: "center",
+    alignItems: "center",
     borderRadius: 8,
   },
 });
