@@ -7,18 +7,39 @@ import { StyleSheet, View } from "react-native";
 
 export default function HomeScrun() {
   const [balance, setBalance] = useState(0);
+  const [inputValue, setInputValue] = useState("");
   const [isCurtainOpen, setIsCurtainOpen] = useState(false);
 
   const toggleCurtain = () => setIsCurtainOpen((prev) => !prev);
-  const deCreaseBalance = () => setBalance((prev) => prev - 1);
   const resetBalance = () => setBalance(0);
+  const handleButtonPress = () => {
+    setInputValue("-");
+    toggleCurtain();
+  };
+  const handleUpdateBalance = () => {
+    const numberValue = parseFloat(inputValue);
+    console.log(typeof numberValue);
+    if (!isNaN(numberValue)) {
+      setBalance((prevBalance) => prevBalance + numberValue);
+      setInputValue("");
+    } else {
+      alert("aaa");
+      toggleCurtain();
+    }
+  };
 
   return (
     <View style={styles.container}>
       <Header res={resetBalance} />
       <Balance balance={balance} />
-      <Action decrement={deCreaseBalance} toggle={toggleCurtain} />
-      <Curtain isOpen={isCurtainOpen} />
+      <Action toggle={toggleCurtain} handleButtonPress={handleButtonPress} />
+      <Curtain
+        handleUpdateBalance={handleUpdateBalance}
+        inputValue={inputValue}
+        setInputValue={setInputValue}
+        isOpen={isCurtainOpen}
+        toggle={toggleCurtain}
+      />
     </View>
   );
 }
