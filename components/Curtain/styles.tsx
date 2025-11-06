@@ -6,6 +6,7 @@ export const styles = StyleSheet.create({
     width: "100%",
     alignItems: "center",
     justifyContent: "center",
+    marginTop: 20,
     paddingVertical: 20,
   },
   curtain: {
@@ -15,12 +16,15 @@ export const styles = StyleSheet.create({
     borderRadius: 12,
     flexDirection: "column",
     padding: 10,
+    zIndex: 999,
+    elevation: 10,
   },
   item: {
     width: "30%",
     height: 80,
     backgroundColor: "rgba(244, 240, 240, 1)",
     borderRadius: 8,
+
     marginBottom: 10,
   },
   itemButton: {
@@ -63,5 +67,46 @@ export const styles = StyleSheet.create({
   },
   scrollView: {
     height: 180,
+  },
+  closeBtnWrapper: {
+    alignItems: "center",
+    flexDirection: "row",
+    justifyContent: "space-between",
+  },
+  subTitlleTeext: {
+    fontSize: 15,
+    fontWeight: "500",
+  },
+  closeButton: {
+    width: 30,
+    height: 30,
+    backgroundColor: "rgba(244, 240, 240, 1)",
+    justifyContent: "center",
+    alignItems: "center",
+    borderRadius: 15,
+  },
+  closeBtnText: {
+    fontSize: 15,
+    fontWeight: "bold",
+  },
+  buttonPressed: {
+    width: "100%",
+    height: "100%",
+    alignItems: "center",
+    justifyContent: "center",
+    borderRadius: 8,
+    borderWidth: 2,
+    borderColor: "#74ad77ff",
+    shadowColor: "#000",
+    shadowOffset: { width: 0, height: 3 },
+    shadowOpacity: 0.55,
+    shadowRadius: 5.84,
+    elevation: 5,
+  },
+  buttonDontPressed: {
+    width: "100%",
+    height: "100%",
+    alignItems: "center",
+    justifyContent: "center",
   },
 });
