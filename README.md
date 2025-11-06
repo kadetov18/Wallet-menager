@@ -9,11 +9,11 @@
 
 ## 📱 Скриншот застосунку
 
-<img src="./media/IMG_3731.PNG">
-<img src="./media/IMG_p2.PNG">
-<img src="./media/IMG_p3.PNG">
-<img src="./media/IMG_p4.PNG">
-<img src="./media/IMG_p5.PNG">
+<img src="./media/IMG_3731.PNG" width="250">
+<img src="./media/IMG_p2.PNG" width="250">
+<img src="./media/IMG_p3.PNG" width="250">
+<img src="./media/IMG_p4.PNG" width="250">
+<img src="./media/IMG_p5.PNG" width="250">
 
 ## 🚀 Як запустити проєкт
 
